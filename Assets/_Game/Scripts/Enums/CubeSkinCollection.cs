@@ -1,0 +1,21 @@
+public enum CubeSkinCollection
+{
+	Default,
+	Armour,
+	Bubble,
+	Chip,
+	Clock,
+	Cloudlet,
+	Critter,
+	Dragnet,
+	Future,
+	Gear,
+	Geometry,
+	Ghost,
+	Grid,
+	Heart,
+	Magma,
+	Oyu,
+	Star,
+	Tesseract
+}

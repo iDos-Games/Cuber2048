@@ -1,0 +1,841 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e209f6b705abdb84a80544502138a713, type: 3}
+  m_Name: SkinData
+  m_EditorClassIdentifier: 
+  _cubes:
+  - _name: Cube 2
+    _cubeIndex: 1
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: c8273ec2c15b35342a746a7a8e7238a2, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 9498029aed92a1140bb503bd0163b00d, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: 17e74c61671254584b88832aadd46f52, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: 662e85b59cf0344a0a3480ea545fbabf, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: 7acd9823b23d274489a0b4d3b1046e89, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: 410073fddaaa9e540b70f08be82302da, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: 5cc417b8964a6d447bc2db699b000553, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: fd72694ad0515684eb612153ff94eb9a, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: ba8254bb89a403a4890c2f33274ab759, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: d1b6a2d78313f714e883dd87331291ae, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: 39745eb9bfb67264596e1bbf8a1f6bc0, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: c035183cc3918ff4fa484720b2df2c33, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: df7f5a5d5413d604eaa1f1317773369e, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 6e5a4f23dabe6df49ae3f03457dfaa68, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: b4b80bb4114211042b7cb8c046b599ad, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 28cdcc336f57e5e4e96c072f7b6cbae6, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: 9740d65f7798c614992fc91ac8d0212a, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 208b5cb9f1aefdc4281bfd872baaff31, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: 5bb6874a8af8df542937d6d2c47cb65d, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: 1951281369727f840b5e902501e15a9b, type: 3}
+  - _name: Cube 4
+    _cubeIndex: 2
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 5f9867285b0832c46b37c3562aa8cdcd, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: c1349b070b1e6624cb656bfbdeadd74a, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: f7b033172815d4cd9befaea0422922e6, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: cd994a00b258f4034a2bf1503018853c, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: 98b9fc5d989257b469211eabcfc0ecf9, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: 71eeb29b1d3dc594ca17e83d71030044, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: 71a9e4b33ed76034487af2ca7c38f14e, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: c06aed20325423140b3caf1e93b116bb, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: d1072502e94211d4c8914477ef77dfbf, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: 7684c163a3c128640a8e9660be6f6343, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: a3065731ed28bd74ab7ebb712bdcdcc7, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: 166496c3a170a094eade31488189f37d, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: 05f7068ac4b906c4fa1b9e0a5441ee6f, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 4e8c27707d5b40740a3be205b5eb7b86, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: 67e3b8a2bbbce264588590c6e3d9594d, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 26c279556e783cf47998c4f9c20619c1, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: d651c63bce68e0d479151acd42eb227c, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 9b7478bcba35f564ab65529467bcb7bb, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: 0277b4d792d97d34b9ddffdc8659555a, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: 3257afe408c105446b1de0fe49100bc4, type: 3}
+  - _name: Cube 8
+    _cubeIndex: 3
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 1dbd3a815f867054a96a3ad436ab7c0f, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 72c22c9ab4b8ebc44998d1b3bada1762, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: becdee35774ee4a70a325754e244ed8c, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: e784d164ea22c49acab235a4273a62ee, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: 51ff4c89d31aa1d4398f078daba554d7, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: 3f64b9d271bfbcf40aab5b2e5b4bfbdd, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: add6f059fc36a0b46954899cd993e1c2, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: 28f849175b0e576459fb2b3514e2f972, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: f1231275e442e104a895ca313301af0c, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: b829e6159d510fc47b124f4501af0c7c, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: 7945210318312a44aa1d0d863a22db20, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: be5351905b32aac4ca57faa210c60adc, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: 564af2aa4fc1b634e98fe3ee8f4892e3, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: fbf155b22c0f1664d8b037ccec85a23e, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: a2fa16e24001a4b4b896d5cdbf2f73c2, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 6ca4d4ba2f7cff0459dfc91a3c66b0a5, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: 29ded396157c244448fddbd8160389c1, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 1f27baadf25835844913b551f9140818, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: ec949fefe8670a946b6322bf3facb6fc, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: f15e423098c7548438716002a52f9920, type: 3}
+  - _name: Cube 16
+    _cubeIndex: 4
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: dfb9e2da3cd486f4c86e860095459ef8, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 38d48a231ce7ab84683f4b6780d27d02, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: 9690da08d3f274c56a5b5d0c58544312, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: 1d3ce749f3bfc48a9a52b7fcfdba7a7b, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: 64488b5a615d3cc4990c369c8b0d02c9, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: 62a103cca8ceeaa4ebb754f9b647b892, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: 15299a87750ee42418a7ec1598512b85, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: ba0c9710711db3d4f9d38e87d44de50b, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: 363e6b4a74e26ba48b0355341f277cf8, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: 27b7cc4bac4cf634abd1118ea2839052, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: c90f97f06b6cebe41adfaef2bf68205e, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: cf116976e00a4634da0256c9c48c4a53, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: f3de08ae4f3d43b4c8f4c967b7f95691, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 1b3088667c5f6064691f5c51e02c531f, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: 61c16413a210586458ad54d31d822abf, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 6190ebe94156bb546bfd022c908ccfdc, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: 3dc95e2f383abc644ac716c4662a9516, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 88e79e3b6d6fdca48a93a9b5ec5bb2dc, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: ffe01e0cee1d779459a8e369e333434d, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: be3161d8882c4e54e9266a44e0539c28, type: 3}
+  - _name: Cube 32
+    _cubeIndex: 5
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 13a82f0b6253e5c44bef70ec88fc9403, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 7faf57b9aa5564a4f8d219add2bda6f3, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: 4a716e1766a045244ab8c6c7ea3d7193, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: b1cf2687089cf2a42a73e2638b6c5f97, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: b64387459a8f8c94f9c24c0b96f534d6, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: bb4c0de0194605c499802130261d8010, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: c61f3b883df24704bb90745de9747bd0, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: 764c6c2131231ff44a291cd23c602075, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: b84a53cf70efcd241b90731927bd9ae9, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: cfea06fd3ed501748a0ddbafcde7c0cf, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: 7f48deaad7316a54d814ff5b6b073fa2, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: e54f7cac00df17842aa14d4411471c2a, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: 3af1db6343855524c8269cd1051d855d, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 70100d621ea1f56478310ee32375e3a6, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: e070bc484fbcf5c4893580fbfbb800c7, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 98fc50b26a136c34cba4d164bedb18f9, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: 192694f137b75014099476b8fe9f196e, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 0ddd2bf9ea5244f45a7b1ad5c647c810, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: 587e17b52fc11c84ca038806ddce999b, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: 8de9829626a833144ac55dd52ddea8cf, type: 3}
+  - _name: Cube 64
+    _cubeIndex: 6
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 0e1b83757853ea647afb8be4c2b6ef75, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 49e756c92f9aad64eb3e6c3181fb31da, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: 095ad4dd295ee2b4a9b073552849ad2a, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: 545f274febef7964285452fd0ea69a63, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: 76e05d843651b414d99e8755c7244471, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: 740cae831a027d9498c5cb6a5b50922a, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: 79ba19830a150bb4487d4b8d109359ab, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: 0e12be1cb74fa1c4e8743024395a4f3d, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: 029f4d08ebe11c546b5a8d9ba7dcdb0c, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: 859674902cd7ac744a33ba64a210bf53, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: 9df33a31ce2de534481b5f8cbb4290f6, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: 6a0ac1bb43e8465498470b5abd90a90d, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: 59a3b3c0ec5109d49b673cc02001b810, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 5dafe1d46fcfc1845bff2e8e51c94be9, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: cd0fa1dc01dd65e458f2b57337dce120, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 0290facfd1b94864aa33348883daac87, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: 60d64ff0ed002ec439a1de8f76b885a5, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 399372a9258bd8649960f2a3f4e852fa, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: d0164485896b0f346a31a4f759742e2a, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: 3136b8d0edc41334fb59cfce5613ebae, type: 3}
+  - _name: Cube 128
+    _cubeIndex: 7
+    _selectedSkinCollection: 12
+    _defaultMaterial: {fileID: 2100000, guid: f6ea5c18e5758f0419c3bbe81ecf00d6, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 9a46a005cf777e546a969345d510f7e6, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: 426299e56ce72864989b03725bff0b53, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: 5f23e3df90509d745992f21e8df679d9, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: 8308bd37d89c31445b9366c3a01404db, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: c30a4225049d22748809fb979e47a317, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: 7a9a5731ad0ebd5478d368d4ea9f7f1c, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: bc1adc5e22fba32459acbe3b95a64f92, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: 67c482f6a5964d547bc087f4094f20d0, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: d40c4bd0a975c764eb4dd794c4367075, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: bb8e6edd9d1959f4a859907a78ba8d0d, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: 9b35549645695224596085ea4aff6302, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: 64193195a14b46241a1eb3b733702d0b, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 9afcafa5dafeac74e967888f90437b38, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: 57b996e466b63024981392ebecb68d28, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 111e53ccaa895284bb99c1e58d4ae9f0, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: ab996b7f644e0a94f87f1ec853b442ea, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 8f9c4f1d6a476d3479c59e6e5aeac396, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: 3a4ba5675ed092c42bd21ae511debe20, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: d22682f63234d8e4dbfd22efc8ca87e6, type: 3}
+  - _name: Cube 256
+    _cubeIndex: 8
+    _selectedSkinCollection: 4
+    _defaultMaterial: {fileID: 2100000, guid: 6214f8ed42e7118438c47dd69a4831d0, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 35058f4560bf7744293f7609449b0111, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: 9f217e1ed67fb3b4ca160525d52ad9cd, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: bcd11386b25e78942956a9d02987c1be, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: bfb7f7eb970c04943a6e59735dfff5c5, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: bbe05ea21c71e4649af3cc74bbea6b1f, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: 3f59a668e2c567f4ca383dce0347128b, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: f9e1241b6193e1f4ba1394f295baec64, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: a6f818daf61baeb49bddf0d1cbe1073f, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: d5fe1218dcc0add4baf3d91b5a347c1b, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: 27f5907f35c06c343bab54164cf0a771, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: 007718ac617ade544b0911c1c0041e4b, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: 6de0d08f1e85349498febd6065ce54cf, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 4fd42ac164f30b04abe2175436c67616, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: d2491c12c2fc93743b6e79f381fe7231, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 6209fd63c3ad3d84bb0ca5307c4a9aaf, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: 6b5c92a1c6d15a14eab80d8f59c10d1a, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 6760c0057eaeed4488f04dc09f8d92e1, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: c669b791116590142a9b437c45618363, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: 3911006465a40194485796fb808144ed, type: 3}
+  - _name: Cube 512
+    _cubeIndex: 9
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 35382d27ce72ecd49828efffec0a102c, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 6ec983037a93b5a42a2708e99d5bab76, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: 5dc260f68e4407d489a3dc9cb41b5928, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: a8644d8229223c04aa22dafe64d0e27e, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: 3ef723167c8d8e340b9ad46f03650547, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: 4416767ec91106d4481a7038d237a8df, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: 72036a9a319a0f44196abec110138301, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: f87b0f5ff7bd47b46b2f64c80f570d8a, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: abd62bf295d2453439079ece23738ae0, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: 40ae07bd85626da428c29fcac45a89a3, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: bf3ca3373c4582b458542d7dfeced909, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: 0985af55852372e418989e4d824e7548, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: ec69720efbc65fe40819e5be142274c1, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 7921bea0bc350e44290f6e6fe333fa15, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: e1f8b51ca039faa4bb99756f561ed8f7, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 2b5e583c2c8a8194d9b589e4a531b311, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: b0f5be12fedd1104f8d5bf59b6a0fe55, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 83a8fa498ba87b9469d9fa9ee6927196, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: 267d9f15fb4069c4f86c2b6cddc284a4, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: 5ed32d3ffac21fa4d86892da46be5f1a, type: 3}
+  - _name: Cube 1024
+    _cubeIndex: 10
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: b568bf2e344382541975ba4ff079fcda, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: abd8ab592ae6a6c499444575c35f5842, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: 4986798973da5cf4b9f039316d36b657, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: 4a62de92b81f7be489ab87c431c331de, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: ed2f17eb457fcfb4eafc4ec71edfdade, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: 4decac219a8306342bbb320715c83448, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: 6e3e43d705e406c4ea404dddeb49993e, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: 99e06861518d67043b55586c557c119e, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: b7641b42cfd573e4e97a1b62a2cdcb89, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: b2861ffd8613ad04a96666450c6e3554, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: 1d1e82cb6dfd6864dbe544d37a913f53, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: 4103bba993288e446aaba5094df164b1, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: 967c88f9379d52a4ba8efc4210a9bc33, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 4814d744473cee24d9091f77fe169bfd, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: f0edc38c055ecbc4b84cb62b1a893f86, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 54f9a99e00dce424f88297ec90d01fa1, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: 33d109e48c9b5ce47a360c53e6f4d576, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 2eab7852bcc6fb14c95af0b798e74a6d, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: fa107304904b0f24e9eac74e5e798720, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: 4ed4d5d77283f914aa857da932690f08, type: 3}
+  - _name: Cube 2048
+    _cubeIndex: 11
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 6601350eb6a099848949339de04e8cd4, type: 2}
+    _skinMaterial: {fileID: 2100000, guid: 3a9a706b276538d43a7cc0585e598bbd, type: 2}
+    _renders:
+    - _name: Default
+      _collection: 0
+      _render: {fileID: 21300000, guid: aa9c091a280400a4f84fb3e734b46868, type: 3}
+    - _name: Armour
+      _collection: 1
+      _render: {fileID: 21300000, guid: 37919e6c39ac7c141b73d12bb25ad648, type: 3}
+    - _name: Bubble
+      _collection: 2
+      _render: {fileID: 21300000, guid: 3433b6c335f5e63489d956fb2009ae9d, type: 3}
+    - _name: Chip
+      _collection: 3
+      _render: {fileID: 21300000, guid: 1a5d0ca8be436df4c91f89b3a6ad7995, type: 3}
+    - _name: Clock
+      _collection: 4
+      _render: {fileID: 21300000, guid: c6cebb18dd38ba84b99ba0626f2c0b9e, type: 3}
+    - _name: Cloudlet
+      _collection: 5
+      _render: {fileID: 21300000, guid: 5a666485bb45c6b449a926791895d07d, type: 3}
+    - _name: Critter
+      _collection: 6
+      _render: {fileID: 21300000, guid: 0ac5d6732b1d29b45b2f13e2147d9ee4, type: 3}
+    - _name: Dragnet
+      _collection: 7
+      _render: {fileID: 21300000, guid: 33c6aab3d25c8214490b3d9847297a15, type: 3}
+    - _name: Future
+      _collection: 8
+      _render: {fileID: 21300000, guid: 0158dd688024a5242be0ee9160fc80d0, type: 3}
+    - _name: Gear
+      _collection: 9
+      _render: {fileID: 21300000, guid: 9f93f032339a5874b97813840ea3be8b, type: 3}
+    - _name: Geometry
+      _collection: 10
+      _render: {fileID: 21300000, guid: 160d13533425eee49bf4990df874482b, type: 3}
+    - _name: Ghost
+      _collection: 11
+      _render: {fileID: 21300000, guid: 07273df6b4e0b4143b0cafcb32074a4f, type: 3}
+    - _name: Grid
+      _collection: 12
+      _render: {fileID: 21300000, guid: 70d912473bd22894d8dd9892de3fb687, type: 3}
+    - _name: Heart
+      _collection: 13
+      _render: {fileID: 21300000, guid: 6daae63afbc273b49a2c3c7d23e3e221, type: 3}
+    - _name: Magma
+      _collection: 14
+      _render: {fileID: 21300000, guid: 82c4740d899f0044e87a7fcf092f64f8, type: 3}
+    - _name: Oyu
+      _collection: 15
+      _render: {fileID: 21300000, guid: 36efcbf60aab06d4489e9962438ab6a4, type: 3}
+    - _name: Star
+      _collection: 16
+      _render: {fileID: 21300000, guid: 71c2723297bc9564889c843042160cfc, type: 3}
+    - _name: Tesseract
+      _collection: 17
+      _render: {fileID: 21300000, guid: 2dd05a2125e6d5c459f7a61bf571818d, type: 3}
+  - _name: Cube 4096
+    _cubeIndex: 12
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: dbe17eae42c026b4c87e507e58c10cd6, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 8192
+    _cubeIndex: 13
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 96eb035b747ba2a4897d567234a5077f, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 16K
+    _cubeIndex: 14
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 26abf2c245579414da35bb8802840305, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 32K
+    _cubeIndex: 15
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: f1d0699d799ed9e41a0b1f8cf0dd3102, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 65K
+    _cubeIndex: 16
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: b6d658a74ee97574f94a4aa57e2d78cf, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 131K
+    _cubeIndex: 17
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: ab110e652711c264f8d604d27ed190f0, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 262K
+    _cubeIndex: 18
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 0c97e89e6d7bf90488ad3794df6f0345, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 524K
+    _cubeIndex: 19
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 0fb231fe77f0ad843a811f865fb9e4ea, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 1M
+    _cubeIndex: 20
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: aa01ea40b7ab4b44f87ba2c183cc0fc8, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 2M
+    _cubeIndex: 21
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 0c1f4dab44231bf4d9962d918dab8f5b, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 4M
+    _cubeIndex: 22
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 84695f1a85469a149bb3e112459e6f69, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 8M
+    _cubeIndex: 23
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 358a8a7338b08eb49920d410dff1e57e, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 16M
+    _cubeIndex: 24
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: e180036e7eb3f9040aba1e4a38ac8090, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 33M
+    _cubeIndex: 25
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 15d2e8d798de7ba4d9ae1019bf902d3e, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 67M
+    _cubeIndex: 26
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 6487ba6734355b141b86bd832511ec95, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 134M
+    _cubeIndex: 27
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 8bd4d22b67c1bda4586288dac19e2ee7, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 268M
+    _cubeIndex: 28
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: fb6596c915434e44da1c6ec522cbe439, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 536M
+    _cubeIndex: 29
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 6e80855808855c84f8cb50896e5a97f2, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  - _name: Cube 1B
+    _cubeIndex: 30
+    _selectedSkinCollection: 0
+    _defaultMaterial: {fileID: 2100000, guid: 46436628b7063b640b1b270576eb6c83, type: 2}
+    _skinMaterial: {fileID: 0}
+    _renders: []
+  _skinCollection:
+  - _name: Armour
+    _collection: 1
+    _texture: {fileID: 2800000, guid: 79c1fdf7416a89a4e916f6f711009579, type: 3}
+  - _name: Bubble
+    _collection: 2
+    _texture: {fileID: 2800000, guid: 953ad6e5104431b459f563552dceb904, type: 3}
+  - _name: Chip
+    _collection: 3
+    _texture: {fileID: 2800000, guid: 72b44285335ef9c4db6cbf9be805c992, type: 3}
+  - _name: Clock
+    _collection: 4
+    _texture: {fileID: 2800000, guid: 7e7fa45b28a058847b334fbb6517192e, type: 3}
+  - _name: Cloudlet
+    _collection: 5
+    _texture: {fileID: 2800000, guid: 8a87d4a3732f91e428e01c243d24fc80, type: 3}
+  - _name: Critter
+    _collection: 6
+    _texture: {fileID: 2800000, guid: 038d8dd2b02bcc24dab4986d1f0c1b7d, type: 3}
+  - _name: Dragnet
+    _collection: 7
+    _texture: {fileID: 2800000, guid: 5bd8985ccd0f3844db4089bf045098b3, type: 3}
+  - _name: Future
+    _collection: 8
+    _texture: {fileID: 2800000, guid: 1eaeff389122bd84598d54f534785e1a, type: 3}
+  - _name: Gear
+    _collection: 9
+    _texture: {fileID: 2800000, guid: 3400190451b5e2f4c833a2a2a4839741, type: 3}
+  - _name: Geometry
+    _collection: 10
+    _texture: {fileID: 2800000, guid: 1e207acb811b16e4287c18ecf64d5d9c, type: 3}
+  - _name: Ghost
+    _collection: 11
+    _texture: {fileID: 2800000, guid: c77b69c7da0d5384faa8ebc30df00a33, type: 3}
+  - _name: Grid
+    _collection: 12
+    _texture: {fileID: 2800000, guid: efa1125d7277b744cac914e0c36ea077, type: 3}
+  - _name: Heart
+    _collection: 13
+    _texture: {fileID: 2800000, guid: fc87e2e57062b8044937723caab3a79a, type: 3}
+  - _name: Magma
+    _collection: 14
+    _texture: {fileID: 2800000, guid: 6cf0986c60a6be84e96cd253b324b57f, type: 3}
+  - _name: Oyu
+    _collection: 15
+    _texture: {fileID: 2800000, guid: d52cca0b7576bb7429bc43c57945eefa, type: 3}
+  - _name: Star
+    _collection: 16
+    _texture: {fileID: 2800000, guid: cbb0914153a475d4d8bd495fb33dc570, type: 3}
+  - _name: Tesseract
+    _collection: 17
+    _texture: {fileID: 2800000, guid: 1d1ee49d843e64144bc1c7df82b91623, type: 3}

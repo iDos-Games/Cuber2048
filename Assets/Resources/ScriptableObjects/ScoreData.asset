@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f495d3071f9b204e922d065a2db2e57, type: 3}
+  m_Name: ScoreData
+  m_EditorClassIdentifier: 
+  _scores:
+  - _name: Cube 2
+    _cubeIndex: 1
+    _score: 0
+    _coinRewardAmount: 0
+  - _name: Cube 4
+    _cubeIndex: 2
+    _score: 1
+    _coinRewardAmount: 0
+  - _name: Cube 8
+    _cubeIndex: 3
+    _score: 2
+    _coinRewardAmount: 0
+  - _name: Cube 16
+    _cubeIndex: 4
+    _score: 3
+    _coinRewardAmount: 0
+  - _name: Cube 32
+    _cubeIndex: 5
+    _score: 4
+    _coinRewardAmount: 0
+  - _name: Cube 64
+    _cubeIndex: 6
+    _score: 5
+    _coinRewardAmount: 0
+  - _name: Cube 128
+    _cubeIndex: 7
+    _score: 7
+    _coinRewardAmount: 0
+  - _name: Cube 256
+    _cubeIndex: 8
+    _score: 10
+    _coinRewardAmount: 0
+  - _name: Cube 512
+    _cubeIndex: 9
+    _score: 20
+    _coinRewardAmount: 3
+  - _name: Cube 1024
+    _cubeIndex: 10
+    _score: 30
+    _coinRewardAmount: 5
+  - _name: Cube 2048
+    _cubeIndex: 11
+    _score: 40
+    _coinRewardAmount: 7
+  - _name: Cube 4096
+    _cubeIndex: 12
+    _score: 50
+    _coinRewardAmount: 8
+  - _name: Cube 8192
+    _cubeIndex: 13
+    _score: 70
+    _coinRewardAmount: 10
+  - _name: Cube 16K
+    _cubeIndex: 14
+    _score: 100
+    _coinRewardAmount: 11
+  - _name: Cube 32K
+    _cubeIndex: 15
+    _score: 200
+    _coinRewardAmount: 13
+  - _name: Cube 65K
+    _cubeIndex: 16
+    _score: 300
+    _coinRewardAmount: 15
+  - _name: Cube 131K
+    _cubeIndex: 17
+    _score: 400
+    _coinRewardAmount: 17
+  - _name: Cube 262K
+    _cubeIndex: 18
+    _score: 500
+    _coinRewardAmount: 18
+  - _name: Cube 524K
+    _cubeIndex: 19
+    _score: 700
+    _coinRewardAmount: 19
+  - _name: Cube 1M
+    _cubeIndex: 20
+    _score: 1000
+    _coinRewardAmount: 20
+  - _name: Cube 2M
+    _cubeIndex: 21
+    _score: 1100
+    _coinRewardAmount: 21
+  - _name: Cube 4M
+    _cubeIndex: 22
+    _score: 1200
+    _coinRewardAmount: 22
+  - _name: Cube 8M
+    _cubeIndex: 23
+    _score: 1300
+    _coinRewardAmount: 23
+  - _name: Cube 16M
+    _cubeIndex: 24
+    _score: 1400
+    _coinRewardAmount: 24
+  - _name: Cube 33M
+    _cubeIndex: 25
+    _score: 1500
+    _coinRewardAmount: 25
+  - _name: Cube 67M
+    _cubeIndex: 26
+    _score: 1700
+    _coinRewardAmount: 26
+  - _name: Cube 134M
+    _cubeIndex: 27
+    _score: 2000
+    _coinRewardAmount: 27
+  - _name: Cube 268M
+    _cubeIndex: 28
+    _score: 2100
+    _coinRewardAmount: 28
+  - _name: Cube 536M
+    _cubeIndex: 29
+    _score: 2200
+    _coinRewardAmount: 29
+  - _name: Cube 1B
+    _cubeIndex: 30
+    _score: 2500
+    _coinRewardAmount: 30
