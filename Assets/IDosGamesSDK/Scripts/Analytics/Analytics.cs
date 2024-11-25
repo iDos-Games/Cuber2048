@@ -10,18 +10,18 @@ using UnityEngine.Purchasing;
 
 namespace IDosGames
 {
-    public class Analytics : MonoBehaviour
-    {
-        private static Analytics _instance;
+	public class Analytics : MonoBehaviour
+	{
+		private static Analytics _instance;
 
-        private void Awake()
-        {
-            if (_instance == null || ReferenceEquals(this, _instance))
-            {
-                _instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-        }
+		private void Awake()
+		{
+			if (_instance == null || ReferenceEquals(this, _instance))
+			{
+				_instance = this;
+				DontDestroyOnLoad(gameObject);
+			}
+		}
 
         void Start()
         {
@@ -30,23 +30,23 @@ namespace IDosGames
         }
 
         private void OnEnable()
-        {
+		{
 #if IDOSGAMES_MOBILE_IAP
 			IAPService.PurchaseCompleted += ReportIAPRevenue;
 #endif
             AdMediation.RevenueDataReceived += ReportAdRevenue;
-        }
+		}
 
-        private void OnDisable()
-        {
+		private void OnDisable()
+		{
 #if IDOSGAMES_MOBILE_IAP
 			IAPService.PurchaseCompleted -= ReportIAPRevenue;
 #endif
             AdMediation.RevenueDataReceived -= ReportAdRevenue;
-        }
+		}
 
-        public static void Send(string name, string parameterName = "", string parameterValue = "")
-        {
+		public static void Send(string name, string parameterName = "", string parameterValue = "")
+		{
 #if UNITY_ANDROID && IDOSGAMES_FIREBASE_ANALYTICS || UNITY_IOS && IDOSGAMES_FIREBASE_ANALYTICS
 			FirebaseAnalytics.LogEvent(name, parameterName, parameterValue);
 #endif
@@ -88,13 +88,13 @@ namespace IDosGames
 #endif
 
         private void ReportAdRevenue(AdRevenueData data)
-        {
-            ReportAdRevenueFirebase(data);
-            ReportAdRevenueAppMetrica(data);
-        }
+		{
+			ReportAdRevenueFirebase(data);
+			ReportAdRevenueAppMetrica(data);
+		}
 
-        private void ReportAdRevenueFirebase(AdRevenueData data)
-        {
+		private void ReportAdRevenueFirebase(AdRevenueData data)
+		{
 #if UNITY_ANDROID && IDOSGAMES_FIREBASE_ANALYTICS || UNITY_IOS && IDOSGAMES_FIREBASE_ANALYTICS
 			Parameter[] AdParameters = {
 				new Parameter("ad_platform", data.AdPlatform),
@@ -110,7 +110,7 @@ namespace IDosGames
         }
 
         private void ReportAdRevenueAppMetrica(AdRevenueData data)
-        {
+		{
 #if IDOSGAMES_APP_METRICA
 			YandexAppMetricaAdRevenue revenue = new((double)data.Revenue, data.Currency)
 			{
