@@ -14,7 +14,7 @@ public class SavedMergeableCubesLoader : MonoBehaviour
 	private void OnEnable()
 	{
 		Playground.GameOver += OnGameOver;
-        UserDataService.FirstTimeDataUpdated += LoadFromServer;
+        UserDataService.FirstTimeDataUpdated += LoadBoard;
 
 #if UNITY_WEBGL
         if (WebFunctionHandler.Instance != null)
@@ -27,7 +27,7 @@ public class SavedMergeableCubesLoader : MonoBehaviour
     private void OnDisable()
 	{
 		Playground.GameOver -= OnGameOver;
-        UserDataService.FirstTimeDataUpdated -= LoadFromServer;
+        UserDataService.FirstTimeDataUpdated -= LoadBoard;
 
 #if UNITY_WEBGL
         if (WebFunctionHandler.Instance != null)
@@ -87,11 +87,14 @@ public class SavedMergeableCubesLoader : MonoBehaviour
         SaveJArrayToServer(jArray);
     }
 
+    private void LoadBoard()
+    {
+        Invoke(nameof(LoadFromServer), 0.5f);
+    }
+
     private void LoadFromServer()
     {
         var loadedData = UserDataService.GetCachedCustomUserData(NAME_SAVED_MERGEABLE_CUBES);
-
-        Debug.Log(loadedData);
 
         if (loadedData == string.Empty)
         {
