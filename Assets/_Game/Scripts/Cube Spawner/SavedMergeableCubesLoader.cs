@@ -39,6 +39,7 @@ public class SavedMergeableCubesLoader : MonoBehaviour
 	private void OnApplicationQuit()
 	{
         //Save();
+        SaveToServer();
     }
 
     private IEnumerator AutoSaveCoroutine()
