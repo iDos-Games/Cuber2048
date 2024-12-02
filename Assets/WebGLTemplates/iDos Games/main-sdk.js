@@ -4,22 +4,30 @@
         return window.location.href;  
     }
 
+    function getPlatformFromHash() {  
+        const hash = window.location.hash.slice(1);  
+        const params = new URLSearchParams(hash);  
+        return params.get('tgWebAppPlatform');  
+    }
+
     function getPlatformFromURL() {  
         const urlParams = new URLSearchParams(window.location.search);  
         return urlParams.get('platform');  
     }
 
-    function getPlatform() 
-	{
-		const platformFromURL = getPlatformFromURL();
-
-		if (platformFromURL === "telegram")
-		{
-			return "telegram";
-		}
-		
-		return "web";
-	}
+    function getPlatform() {  
+        const platformFromHash = getPlatformFromHash();  
+        if (platformFromHash) {  
+            return "telegram";  
+        }  
+  
+        const platformFromURL = getPlatformFromURL();  
+        if (platformFromURL === "telegram") {  
+            return "telegram";  
+        }  
+  
+        return "web";  
+    }
 
     function loadSDK(platform, callback) 
 	{  
@@ -161,6 +169,31 @@
     function cacheClear() {  
         return caches.delete(cacheName);  
     }
+
+    function onWindowFocus() {
+        console.log("Window has gained focus");
+        if (typeof window.igcInstance !== 'undefined') {
+            window.igcInstance.SendMessage('WebFunctionHandler', 'OnWebAppFocusTrue');
+        }
+    }
+    
+    function onWindowBlur() {
+        console.log("Window has lost focus");
+        if (typeof window.igcInstance !== 'undefined') {
+            window.igcInstance.SendMessage('WebFunctionHandler', 'OnWebAppFocusFalse');
+        }
+    }
+
+    function onWindowBeforeUnload() {
+        console.log("Window is about to be closed or reloaded");
+        if (typeof window.igcInstance !== 'undefined') {
+            window.igcInstance.SendMessage('WebFunctionHandler', 'OnWebAppQuit');
+        }
+    }
+
+    window.addEventListener('focus', onWindowFocus);
+    window.addEventListener('blur', onWindowBlur);
+    window.addEventListener('beforeunload', onWindowBeforeUnload);
     
     window.cacheSaveData = cacheSaveData;
     window.cacheLoadData = cacheLoadData;
