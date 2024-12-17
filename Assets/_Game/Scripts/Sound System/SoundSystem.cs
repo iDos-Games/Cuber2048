@@ -18,7 +18,10 @@ public class SoundSystem : MonoBehaviour
 	[SerializeField] private AudioClip _gameOverSound;
 	[Range(0, 1.0f)][SerializeField] private float _gameOverSoundVolume = 1.0f;
 
-	private void Awake()
+    [SerializeField] private GameObject _soundOn;
+    [SerializeField] private GameObject _musicOn;
+
+    private void Awake()
 	{
 		if (_instance == null || ReferenceEquals(this, _instance))
 		{
@@ -49,7 +52,9 @@ public class SoundSystem : MonoBehaviour
 	public void UpdateBackgroundMusicState()
 	{
 		_backgroundMusic.gameObject.SetActive(GameSettings.BackgroundMusicEnabled);
-	}
+        _musicOn.SetActive(GameSettings.BackgroundMusicEnabled);
+        _soundOn.SetActive(GameSettings.SoundFXEnabled);
+    }
 
 	public void PlayCubeMergeSound()
 	{
@@ -74,4 +79,16 @@ public class SoundSystem : MonoBehaviour
 			_audioSource.PlayOneShot(_gameOverSound, _gameOverSoundVolume);
 		}
 	}
+
+	public void SoundSwitch(bool active)
+	{
+		GameSettings.SwitchSoundFX();
+        _soundOn.SetActive(active);
+    }
+
+    public void MusicSwitch(bool active)
+    {
+        GameSettings.SwitchBackgroundMusic();
+        _musicOn.SetActive(active);
+    }
 }
