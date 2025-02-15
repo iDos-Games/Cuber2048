@@ -39,7 +39,7 @@ public class SavedMergeableCubesLoader : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(AutoSaveCoroutine());
+        //StartCoroutine(AutoSaveCoroutine());
     }
 
     private void OnApplicationFocus(bool focus)
