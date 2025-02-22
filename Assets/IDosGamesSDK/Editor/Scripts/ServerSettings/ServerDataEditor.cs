@@ -10,7 +10,7 @@ namespace IDosGames
 
         private IDosGamesSDKSettings settings;
 
-        [MenuItem("Tools/iDos Games SDK/1. Server Settings")]
+        [MenuItem("iDos Games/1. Server Settings")]
         public static void ShowWindow()
         {
             GetWindow<ServerDataEditor>("Server Settings");
@@ -46,7 +46,7 @@ namespace IDosGames
             GUILayout.Space(5);
             settings.DeveloperSecretKey = EditorGUILayout.TextField("Developer Secret Key", settings.DeveloperSecretKey);
             settings.TitleID = EditorGUILayout.TextField("Title ID", settings.TitleID);
-            settings.TitleTemplateID = EditorGUILayout.TextField("Title ID", settings.TitleTemplateID);
+            settings.TitleTemplateID = EditorGUILayout.TextField("Title Template ID", settings.TitleTemplateID);
 
             GUILayout.Space(10);
 

@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CloudSavedLoader : MonoBehaviour
 {
-    private const string PLAYER_PREF_SAVED_MERGEABLE_CUBES = "SAVED_MERGEABLE_CUBES";
+    private static string PLAYER_PREF_SAVED_MERGEABLE_CUBES { get; set; }
 
     [SerializeField] private GameCubeSpawner _spawner;
 
@@ -22,6 +22,7 @@ public class CloudSavedLoader : MonoBehaviour
 
     private void Start()
     {
+        PLAYER_PREF_SAVED_MERGEABLE_CUBES = "SAVED_MERGEABLE_CUBES" + AuthService.UserID;
         //Load();
     }
 
@@ -69,8 +70,6 @@ public class CloudSavedLoader : MonoBehaviour
 
     public void CloudLoad()
     {
-
-
         var loadedData = UserDataService.GetCachedCustomUserData(CustomUserDataKey.saved_gameplay_data); //PlayerPrefs.GetString(PLAYER_PREF_SAVED_MERGEABLE_CUBES, string.Empty);
 
         //Debug.Log(loadedData);

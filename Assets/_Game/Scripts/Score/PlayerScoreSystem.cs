@@ -1,3 +1,4 @@
+using IDosGames;
 using System;
 using System.Linq;
 using UnityEngine;
@@ -5,8 +6,8 @@ using UnityEngine;
 public class PlayerScoreSystem : MonoBehaviour
 {
 	private const int DEFAULT_SCORE_VALUE = 0;
-	private const string PLAYER_PREF_SCORE_RECORD = "SCORE_RECORD";
-	private const string PLAYER_PREF_SCORE_CURRENT = "SCORE_CURRENT";
+	private static string PLAYER_PREF_SCORE_RECORD => "SCORE_RECORD" + AuthService.UserID;
+	private static string PLAYER_PREF_SCORE_CURRENT => "SCORE_CURRENT" + AuthService.UserID;
 
 	public static event Action NewRecord;
 

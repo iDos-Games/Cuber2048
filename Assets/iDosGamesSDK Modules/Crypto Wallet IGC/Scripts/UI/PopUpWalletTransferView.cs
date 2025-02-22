@@ -30,8 +30,9 @@ namespace IDosGames
 
 			if (TransactionType == CryptoTransactionType.Token)
 			{
-				ResetTokenDropdown();
-				_tokenDropdown.onValueChanged.AddListener((text) => UpdateAvailableAmount());
+                SetTokenDropdownOptions();
+                ResetTokenDropdown();
+                _tokenDropdown.onValueChanged.AddListener((text) => UpdateAvailableAmount());
 			}
 			else if (TransactionType == CryptoTransactionType.NFT)
 			{
@@ -52,7 +53,37 @@ namespace IDosGames
 			}
 		}
 
-		public void SetTransactionType(CryptoTransactionType transactionType)
+        private async void SetTokenDropdownOptions()
+        {
+            _tokenDropdown.options.Clear();
+
+            var hardTokenCurrency = IGSUserData.Currency.CurrencyData.Find(c => c.CurrencyCode == "IG");
+            string hardTokenImageUrl = hardTokenCurrency?.ImageUrl;
+
+            Sprite hardTokenImage = await ImageLoader.GetSpriteAsync(!string.IsNullOrEmpty(hardTokenImageUrl) ? hardTokenImageUrl : "Sprites/Currency/IGT");
+
+            _tokenDropdown.options.Add(new TMP_Dropdown.OptionData
+            {
+                text = BlockchainSettings.HardTokenTicker,
+                image = hardTokenImage
+            });
+
+            var softTokenCurrency = IGSUserData.Currency.CurrencyData.Find(c => c.CurrencyCode == "CO");
+            string softTokenImageUrl = softTokenCurrency?.ImageUrl;
+
+            Sprite softTokenImage = await ImageLoader.GetSpriteAsync(!string.IsNullOrEmpty(softTokenImageUrl) ? softTokenImageUrl : "Sprites/Currency/IGC");
+
+            _tokenDropdown.options.Add(new TMP_Dropdown.OptionData
+            {
+                text = BlockchainSettings.SoftTokenTicker,
+                image = softTokenImage
+            });
+
+            _tokenDropdown.RefreshShownValue();
+			UpdateAvailableAmount();
+        }
+
+        public void SetTransactionType(CryptoTransactionType transactionType)
 		{
 			TransactionType = transactionType;
 		}
@@ -79,7 +110,7 @@ namespace IDosGames
 
 		public VirtualCurrencyID GetTokenInput()
 		{
-			if (_tokenDropdown.captionText.text.Trim().ToUpper() == JsonProperty.IGT.ToUpper())
+			if (_tokenDropdown.captionText.text.Trim().ToUpper() == BlockchainSettings.HardTokenTicker.ToUpper())
 			{
 				return VirtualCurrencyID.IG;
 			}
@@ -138,12 +169,12 @@ namespace IDosGames
 			{
 				if (tokenInput == VirtualCurrencyID.IG)
 				{
-					amount = _cryptoTokenBalance.BalanceOfIGT;
-				}
+                    amount = _cryptoTokenBalance.GetTokenAmount(tokenInput);
+                }
 				else if (tokenInput == VirtualCurrencyID.CO)
 				{
-					amount = _cryptoTokenBalance.BalanceOfIGC;
-				}
+                    amount = _cryptoTokenBalance.GetTokenAmount(tokenInput);
+                }
 			}
 
 			_amountInputField.UpdateAvailableAmount(amount);
